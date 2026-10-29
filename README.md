@@ -20,7 +20,7 @@ only when an AIDM Eigen pin changes.
 | Use | Commit | Upstream ref containing it |
 | --- | --- | --- |
 | OpenMVS and OpenPointClass | `7176ae16238ded7fb5ed30a7f5215825b3abd134` | branch `3.4`, tag `3.4.1` |
-| Draco 383 submodule | `3147391d946bb4b6c68edd901f2add6ac1f31f8c` | tag `3.4.0` |
+| Draco 383 and LightGBM submodules | `3147391d946bb4b6c68edd901f2add6ac1f31f8c` | tag `3.4.0` |
 | mvs-texturing Eigen 3.3.2 | `477d1e81928a8514d2cca6a6e1e7e478eecd8634` | tag `3.3.2` |
 
 ## Refresh when a pin changes
@@ -55,3 +55,6 @@ Verify the mirrored commit IDs from GitHub. Update the table on this docs
 branch with a signed-off commit. Keep all upstream source commits intact.
 Archive the repository again before merging the AIDM pin change. Validate
 that change with GitLab blocked, including recursive submodule fetches.
+LightGBM is fetched by OpenPointClass at
+`e4231205a3bac13662a81db9433ddaea8924fbce`. Its Eigen submodule is at
+`external_libs/eigen` and shares the Draco Eigen pin.
